@@ -28,7 +28,8 @@ jobs:
           project_id: ${{ secrets.THUNDRA_PROJECT_ID }}      
       - name: Run checks
         run: |
-          
+          cd tests
+          ./runtests.py
         env:
           THUNDRA_AGENT_REPORT_REST_BASEURL: https://collector.thundra.me/v1
           THUNDRA_AGENT_DEBUG_ENABLE: true
