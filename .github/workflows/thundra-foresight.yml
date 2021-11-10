@@ -1,4 +1,4 @@
-name: dajngo-foresight-python
+name: django-foresight-python
 on:
   workflow_dispatch:
 jobs:
